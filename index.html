@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>css shake demo</title>
+        <style>
+            body{
+                font-family:Helvetica,Arial,sans-serif;
+                text-shadow: 1px 1px 2px #606060;
+            }
+            img{
+                border: 5px solid #000000;
+                box-shadow: 3px 3px 2px #606060;
+                animation: shake 0.2s infinite;
+            }
+            @keyframes shake{
+                0% {transform: translate(0px,5px)}
+                25% {transform: translate(5px,3px)}
+                50% {transform: translate(2px,6px)}
+                75% {transform: translate(3px,0px)}
+                100% {transform: translate(5px,4px)}
+            }
+        </style>
+    </head>
+    <body bgcolor="#d1d1d1">
+        <h1>making an image shake in css</h1>
+        <img src="https://media2.s-nbcnews.com/i/newscms/2017_07/1195993/mcdonalds-new-shamrock-shakes-tease_177ba2ae44ca2b88932f6bde8f716b62.png">
+    </body>
+</html>
